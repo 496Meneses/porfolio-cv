@@ -1,5 +1,5 @@
 ---
-// LandingPage.astro
+
 ---
 
 <style>
@@ -36,6 +36,7 @@
         <p class="quote-text">Si puedes imaginarlo, puedes construirlo.</p>
         <p class="quote-author">— Phineas Flynn</p>
     </div>
+        <div class="portfolio-legend">Este portafolio está en construcción</div>
 </div>
 
 <style>
@@ -49,6 +50,15 @@
         font-family: "Fira Code", monospace;
         position: relative;
     }
+
+        .portfolio-legend {
+            text-align: center;
+            font-size: 1rem;
+            color: #cfcfcf;
+            opacity: 0.5;
+            margin-top: 0.5rem;
+            font-family: "Fira Code", monospace;
+        }
 
     .quote-box::before {
         content: "“";
