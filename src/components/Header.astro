@@ -1,0 +1,161 @@
+---
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/50">
+    <nav class="nav">
+        <div class="logo">
+            <a href="#home" class="text-white hover:text-primary transition-colors">
+                <span class="font-mono">Andrés</span>
+            </a>
+        </div>
+
+        <!-- Botón de menú móvil -->
+        <button class="mobile-menu-button md:hidden" aria-label="Menú">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <!-- Enlaces de navegación -->
+        <ul class="nav-links">
+            <li>
+                <a href="#home" class="nav-link">
+                    <span class="primary">#</span>inicio
+                </a>
+            </li>
+            <li>
+                <a href="#experiencia" class="nav-link">
+                    <span class="primary">#</span>experiencia
+                </a>
+            </li>
+            <li>
+                <a href="#educacion" class="nav-link">
+                    <span class="primary">#</span>educación
+                </a>
+            </li>
+            <li>
+                <a href="#habilidades" class="nav-link">
+                    <span class="primary">#</span>habilidades
+                </a>
+            </li>
+            <li>
+                <a href="#sobre-mi" class="nav-link">
+                    <span class="primary">#</span>sobre-mi
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    .nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: relative;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .mobile-menu-button {
+        border: none;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem;
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #ffffff;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .nav-link:hover {
+        opacity: 1;
+        color: #3182ce;
+    }
+
+    .primary {
+        color: #3182ce;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-menu-button {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            gap: 1rem;
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
+
+        .nav-links.show {
+            display: flex;
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
+
+<script>
+    // Manejo del menú móvil
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuButton && navLinks) {
+        mobileMenuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+            });
+        });
+
+        // Cerrar menú al hacer clic fuera
+        document.addEventListener('click', (e) => {
+            const target = e.target as Node;
+            if (!navLinks.contains(target) && !mobileMenuButton.contains(target)) {
+                navLinks.classList.remove('show');
+            }
+        });
+    }
+</script>
+
+</style>

@@ -1,3 +1,13 @@
+---
+import Header from "../components/Header.astro";
+import LadingPage from "../components/LadingPage.astro";
+import Experiencies from "../components/Experiencies.astro";
+import Education from "../components/Education.astro";
+import Abilities from "../components/Abilities.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Footer from "../components/Footer.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +15,192 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Porfolio</title>
 	</head>
 	<body>
-		<slot />
+		<div class="decoration-container">
+			<div class="decoration left">
+				<div class="square"></div>
+				<div class="dot-grid"></div>
+				<div class="line"></div>
+			</div>
+			<div class="decoration right">
+				<div class="square"></div>
+				<div class="dot-grid"></div>
+				<div class="line"></div>
+			</div>
+			<main>
+				<Header/>
+				<LadingPage/>
+				<Experiencies/>
+				<Education/>
+				<Abilities/>
+				<AboutMe/>
+				<slot />
+				<Footer />
+			</main>
+		</div>
 	</body>
 </html>
 
-<style>
+<style is:global>
+	@import "@fontsource/fira-code";
 	html,
 	body {
+		font-family: "Fira Code", monospace;
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		min-height: 100vh;
+		color: #ffffff;
+		background-color: #000000;
+		opacity: 0.90;
+		overflow-x: hidden;
 	}
+
+	.decoration-container {
+		position: relative;
+		width: 100%;
+		min-height: 100vh;
+	}
+
+	.decoration {
+		position: fixed;
+		top: 0;
+		height: 100%;
+		width: 200px;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	.decoration.left {
+		left: 0;
+	}
+
+	.decoration.right {
+		right: 0;
+	}
+
+	.square {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border: 1px solid rgba(49, 130, 206, 0.3);
+		transform: rotate(45deg);
+	}
+
+	.decoration.left .square {
+		left: 40px;
+		animation: floatLeft 15s infinite linear;
+	}
+
+	.decoration.right .square {
+		right: 40px;
+		animation: floatRight 15s infinite linear;
+	}
+
+	.dot-grid {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		background-image: radial-gradient(circle, rgba(49, 130, 206, 0.3) 1px, transparent 1px);
+		background-size: 10px 10px;
+	}
+
+	.decoration.left .dot-grid {
+		left: 80px;
+		top: 30%;
+		animation: floatLeft 20s infinite linear;
+	}
+
+	.decoration.right .dot-grid {
+		right: 80px;
+		top: 60%;
+		animation: floatRight 20s infinite linear;
+	}
+
+	.line {
+		position: absolute;
+		width: 1px;
+		height: 100px;
+		background: linear-gradient(180deg, transparent, rgba(49, 130, 206, 0.3), transparent);
+	}
+
+	.decoration.left .line {
+		left: 60px;
+		animation: floatLeft 25s infinite linear;
+	}
+
+	.decoration.right .line {
+		right: 60px;
+		animation: floatRight 25s infinite linear;
+	}
+
+	@keyframes floatLeft {
+		0% {
+			transform: translateY(0) rotate(0deg);
+		}
+		50% {
+			transform: translateY(30vh) rotate(180deg);
+		}
+		100% {
+			transform: translateY(0) rotate(360deg);
+		}
+	}
+
+	@keyframes floatRight {
+		0% {
+			transform: translateY(30vh) rotate(0deg);
+		}
+		50% {
+			transform: translateY(0) rotate(180deg);
+		}
+		100% {
+			transform: translateY(30vh) rotate(360deg);
+		}
+	}
+
+	main {
+		position: relative;
+		z-index: 1;
+	}
+
+    .primary {
+        color: #3182ce; 
+    }
+    
+    .gray {
+        color: #4a5568;
+    }
+
+	span[class*="bg-"] {
+        background-color: rgba(49, 130, 206, 0.1);
+        color: #3182ce;
+    }
+
+	.section-title-principal {
+		display: flex;
+		align-items: center;
+		gap: 0rem;
+		font-size: 1.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.section-title-principal::after {
+		margin-left: 1rem;
+		content: '';
+		flex: 1;
+		height: 1px;
+		background-color: #3182ce;
+		opacity: 0.6;
+	}
+
+	@media (max-width: 768px) {
+		.decoration {
+			display: none;
+		}
+	}
+
+
 </style>
+
+

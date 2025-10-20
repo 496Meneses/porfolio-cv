@@ -1,0 +1,117 @@
+---
+const EXPERIENCES = [
+    {
+        date: "Dic 2023 - Actualmente...",
+        title: "Desarrollador FullStack Semi-Senior",
+        company: "Intempo.SAS",
+        description:
+            "Responsable del mantenimiento y evolución de una solución basada en microservicios y microfrontends, desarrollada con Angular v15+ y Spring Boot. Comunicación entre servicios mediante Apache Kafka. " +
+            "Generación de reportes con JasperReports. Trabajo bajo metodología ágil Scrum y realización de pruebas unitarias utilizando JUnit y Mockito.",
+    },
+    {
+        date: "Oct 2021 – Dic 2023",
+        title: "Desarrollador FullStack",
+        company: "Sitis SAS.",
+        description:
+            "Participación en el mantenimiento de una aplicación monolítica desarrollada en Java EE, utilizando JSF y PrimeFaces. " +
+            "Apoyo en el diseño e implementación de un nuevo sistema basado en microservicios con Spring Boot, Spring Cloud y " +
+            "Angular, utilizando PrimeNG. Desarrollo de nuevas funcionalidades y atención a requerimientos específicos del cliente " +
+            "bajo metodología ágil Scrum. Integración de autenticación con Keycloak y OAuth2, y generación de reportes mediante " +
+            "JasperStudio.",
+    },
+    {
+        date: "Ene 2023 – Dic 2023",
+        title: "Desarrollador Backend",
+        company: "Universidad del Cauca.",
+        description:
+            "Participación en el desarrollo de una aplicación web para apoyar procesos de autoevaluación institucional. " +
+            "Responsable de la recolección y análisis de requerimientos funcionales y no funcionales, documentados en historias de usuario. " +
+            "Diseño de prototipos de interfaz (Figma), implementación del frontend y backend (Angular y Spring Boot), generación de " +
+            "reportes PDF (JasperReports), pruebas automatizadas (JUnit y Mockito) y despliegue del sistema en la nube (AWS con Docker).",
+    },
+];
+---
+<div id="experiencia">
+    <section class="section" aria-label="Experiencia laboral">
+    <span class="section-title-principal"><span class="primary">#</span>experiencia</span>
+    <div class="container">
+        {
+            EXPERIENCES.map(({ date, title, company, description }) => (
+                <article class="experience-entry">
+                    <span class="date">{date}</span>
+                    <h3 class="title">
+                        {title} · <span class="company">{company}</span>
+                    </h3>
+                    <p class="description">{description}</p>
+                </article>
+            ))
+        }
+    </div>
+</section>
+</div>
+
+
+<style>
+    .section {
+        margin: 4rem auto;
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .experience-entry {
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .experience-entry:hover {
+        transform: translateY(-4px);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .date {
+        color: #888;
+        font-size: 0.9rem;
+    }
+
+    .title {
+        color: #fff;
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+    }
+
+    .company {
+        color: #64748b;
+    }
+
+    .description {
+        color: #94a3b8;
+        line-height: 1.5;
+        margin-top: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .section {
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+        }
+    }
+</style>

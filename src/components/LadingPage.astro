@@ -1,0 +1,152 @@
+---
+// LandingPage.astro
+---
+
+<style>
+    span[class*="bg-"] {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    span[class*="bg-"]:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+</style>
+<div class="pt-20"  id="home">
+    <section  class="seccion flex justify-center items-start">
+        <div
+            class="flex flex-row justify-between m-auto items-center w-full max-w-4xl gap-8"
+        >
+            <div>
+                <span class="text-3xl font-bold"
+                    >Hola, soy
+                    <span class="primary">Andrés Meneses Ortega </span>
+                </span>
+                <p class="text-1xl mb-1">
+                    Estudiante de arquitectura de software ,Desarrollador Full Stack con más de
+                    <span class="font-semibold primary">4 años de experiencia.</span
+                    >
+                </p>
+                <p class="text-1xl gray mb-4">Popayán, Colombia</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="quote-box">
+        <p class="quote-text">Si puedes imaginarlo, puedes construirlo.</p>
+        <p class="quote-author">— Phineas Flynn</p>
+    </div>
+</div>
+
+<style>
+    .quote-box {
+        border: 1px solid #3182ce;
+        padding: 0.7rem;
+        margin: 2rem auto;
+        max-width: 700px;
+
+        color: #ffffff;
+        font-family: "Fira Code", monospace;
+        position: relative;
+    }
+
+    .quote-box::before {
+        content: "“";
+        position: absolute;
+        top: -10px;
+        left: 15px;
+        font-size: 3rem;
+        color: #3182ce;
+        opacity: 0.8;
+    }
+
+    .quote-box::after {
+        content: "”";
+        position: absolute;
+        bottom: -30px;
+        right: 15px;
+        font-size: 3rem;
+        color: #3182ce;
+        opacity: 0.8;
+    }
+
+    .quote-text {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+        margin: 0;
+        text-align: center;
+    }
+
+    .quote-author {
+        width: 100%;
+        opacity: 0.8;
+        text-align: right;
+        font-size: 1rem;
+        color: #cfcfcf;
+        display: inline-block;
+        padding: 0.4rem 1rem;
+    }
+
+    .seccion {
+        margin: 4rem auto;
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .experience-entry {
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .experience-entry:hover {
+        transform: translateY(-4px);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .date {
+        color: #888;
+        font-size: 0.9rem;
+    }
+
+    .title {
+        color: #fff;
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+    }
+
+    .company {
+        color: #64748b;
+    }
+
+    .description {
+        color: #94a3b8;
+        line-height: 1.5;
+        margin-top: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .section {
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+        }
+    }
+</style>

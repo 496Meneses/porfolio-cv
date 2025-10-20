@@ -1,0 +1,78 @@
+---
+interface Education {
+    title: string
+    description: string
+    date: string
+    institution: string
+}
+
+const EDUCATION: Education[] = [
+    {
+        title: "Magister en Arquitectura de softwware (Proceso)",
+        description: "Maestría en Ingeniería de Software, enfocada en el desarrollo de soluciones innovadoras y escalables.",
+        date: "2025 - Presente",
+        institution: "Universidad de la Sabana"
+    },
+    {
+        title: "Ingeniero de Sistemas",
+        description: "Experto en diseño, desarrollo e integración de sistemas.",
+        date: "2016 - 2024",
+        institution: "Universidad del Cauca"
+    },
+]
+---
+
+<section id="educacion" class="section bg-variant">
+    <span class="section-title-principal"><span class="primary">#</span>educación</span>
+
+    <div class="gallery">
+        {
+            EDUCATION.map(({ title, description, date, institution }) => (
+                <div class="education-card">
+                    <h4 class="text-xl font-semibold">{title}</h4>
+                    <p class="text-gray-400">{institution}</p>
+                    <p class="text-sm">{description}</p>
+                    <p class="text-sm text-gray-500">{date}</p>
+                </div>
+            ))
+        }
+    </div>
+</section>
+
+<style>
+    .section {
+        margin: 2rem auto;
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+
+    .section-header {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .gallery {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .education-card {
+        background: var(--gray-999);
+        border: 1px solid var(--gray-800);
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .education-card:hover {
+        transform: translateY(-3px);
+    }
+
+    @media (min-width: 50em) {
+        .section {
+            padding: 2.5rem 2.5rem;
+        }
+    }
+</style></header></section>
