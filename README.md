@@ -1,4 +1,4 @@
-# porfolio-cv
+# Porfolio - CV
 
 ¡Bienvenido! Este repositorio contiene mi porfolio / CV personal, un sitio web pensado para mostrar proyectos, experiencia y contacto de forma clara y profesional.
 
