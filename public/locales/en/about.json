@@ -1,0 +1,17 @@
+{
+  "about": {
+    "title": "about-me",
+    "greeting": "Hello!",
+    "p1": "I am a Systems Engineer with 4 years of experience in software development. I specialize in modern technologies such as Angular, React, Astro and Spring Boot, with solid knowledge in SQL databases.",
+    "p2": "My focus is on implementing best development practices, writing clean and maintainable code. I rigorously apply design patterns and work efficiently with agile methodologies (Scrum) to ensure high-quality results.",
+    "p3": "I excel in automated testing development and have experience deploying applications in the cloud. I constantly seek to improve code quality and efficiency, ensuring robust and scalable solutions for each project.",
+    "p4": "I am currently pursuing a Master's degree in Software Architecture at Universidad de La Sabana, as I firmly believe in the importance of continuous learning and professional evolution. This training allows me to stay at the forefront of best practices and trends in software development.",
+    "code": {
+      "name": "Andrés",
+      "role": "Software Engineer",
+      "nextRole": "Software Architect",
+      "passion": "Clean Architecture",
+      "comment": "// Next Software Architect"
+    }
+  }
+}

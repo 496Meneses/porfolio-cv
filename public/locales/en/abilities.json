@@ -1,0 +1,12 @@
+{
+  "abilities": {
+    "title": "skills",
+    "categories": {
+      "languages": "Languages",
+      "databases": "Databases",
+      "tools": "Tools",
+      "frameworks": "Frameworks",
+      "others": "Others"
+    }
+  }
+}

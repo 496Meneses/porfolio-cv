@@ -1,0 +1,14 @@
+{
+  "education": {
+    "title": "education",
+    "present": "Present",
+    "degrees": {
+      "masters": "Master in Software Architecture",
+      "engineer": "Systems Engineer"
+    },
+    "descriptions": {
+      "masters": "Master's degree in Software Engineering, focused on developing innovative and scalable solutions.",
+      "engineer": "Design, development and integration of systems."
+    }
+  }
+}

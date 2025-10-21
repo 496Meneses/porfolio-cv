@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "home": "inicio",
+    "experience": "experiencia",
+    "education": "educación",
+    "skills": "habilidades",
+    "about": "sobre-mi"
+  },
+  "menu": {
+    "label": "Menú"
+  }
+}

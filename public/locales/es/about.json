@@ -1,0 +1,17 @@
+{
+  "about": {
+    "title": "sobre-mi",
+    "greeting": "¡Hola!",
+    "p1": "Soy un Ingeniero de Sistemas con 4 años de experiencia en desarrollo de software. Me especializo en tecnologías modernas como Angular, React, Astro y Spring Boot, con un sólido conocimiento en bases de datos SQL.",
+    "p2": "Mi enfoque se centra en la implementación de buenas prácticas de desarrollo, escribiendo código limpio y mantenible. Aplico rigurosamente patrones de diseño y trabajo eficientemente con metodologías ágiles (Scrum) para garantizar resultados de alta calidad.",
+    "p3": "Me destaco en el desarrollo de pruebas automatizadas y tengo experiencia en despliegue de aplicaciones en la nube. Constantemente busco mejorar la calidad y eficiencia del código, asegurando soluciones robustas y escalables para cada proyecto.",
+    "p4": "Actualmente, estoy cursando una Maestría en Arquitectura de Software en la Universidad de La Sabana, ya que creo firmemente en la importancia del aprendizaje continuo y la evolución profesional. Esta formación me permite mantenerme a la vanguardia de las mejores prácticas y tendencias en el desarrollo de software.",
+    "code": {
+      "name": "Andrés",
+      "role": "Software Engineer",
+      "nextRole": "Arquitecto de software",
+      "passion": "Clean Architecture",
+      "comment": "// Próximo Arquitecto de Software"
+    }
+  }
+}

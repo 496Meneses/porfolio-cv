@@ -1,48 +1,39 @@
 ---
 const EXPERIENCES = [
     {
-        date: "Dic 2023 - Actualmente...",
-        title: "Desarrollador FullStack Semi-Senior",
+        dateKey: "experience.date1",
+        titleKey: "experience.positions.fullstack_semi",
         company: "Intempo.SAS",
-        description:
-            "Responsable del mantenimiento y evolución de una solución basada en microservicios y microfrontends, desarrollada con Angular v15+ y Spring Boot. Comunicación entre servicios mediante Apache Kafka. " +
-            "Generación de reportes con JasperReports. Trabajo bajo metodología ágil Scrum y realización de pruebas unitarias utilizando JUnit y Mockito.",
+        descriptionKey: "experiences.intempo.description",
     },
     {
-        date: "Oct 2021 – Dic 2023",
-        title: "Desarrollador FullStack",
+        dateKey: "experience.date2",
+        titleKey: "experience.positions.fullstack",
         company: "Sitis SAS.",
-        description:
-            "Participación en el mantenimiento de una aplicación monolítica desarrollada en Java EE, utilizando JSF y PrimeFaces. " +
-            "Apoyo en el diseño e implementación de un nuevo sistema basado en microservicios con Spring Boot, Spring Cloud y " +
-            "Angular, utilizando PrimeNG. Desarrollo de nuevas funcionalidades y atención a requerimientos específicos del cliente " +
-            "bajo metodología ágil Scrum. Integración de autenticación con Keycloak y OAuth2, y generación de reportes mediante " +
-            "JasperStudio.",
+        descriptionKey: "experiences.sitis.description",
     },
     {
-        date: "Ene 2023 – Dic 2023",
-        title: "Desarrollador Backend",
+        dateKey: "experience.date3",
+        titleKey: "experience.positions.backend",
         company: "Universidad del Cauca.",
-        description:
-            "Participación en el desarrollo de una aplicación web para apoyar procesos de autoevaluación institucional. " +
-            "Responsable de la recolección y análisis de requerimientos funcionales y no funcionales, documentados en historias de usuario. " +
-            "Diseño de prototipos de interfaz (Figma), implementación del frontend y backend (Angular y Spring Boot), generación de " +
-            "reportes PDF (JasperReports), pruebas automatizadas (JUnit y Mockito) y despliegue del sistema en la nube (AWS con Docker).",
+        descriptionKey: "experiences.ucauca.description",
     },
 ];
 ---
 <div id="experiencia">
     <section class="section" aria-label="Experiencia laboral">
-    <span class="section-title-principal"><span class="primary">#</span>experiencia</span>
+    <span class="section-title-principal"><span class="primary">#</span><span data-i18n="experience.title">experiencia</span></span>
     <div class="container">
         {
-            EXPERIENCES.map(({ date, title, company, description }) => (
+            EXPERIENCES.map(({ dateKey, titleKey, company, descriptionKey }) => (
                 <article class="experience-entry">
-                    <span class="date">{date}</span>
+                    <span class="date" data-i18n={dateKey}>Dic 2023 - Actualmente...</span>
                     <h3 class="title">
-                        {title} · <span class="company">{company}</span>
+                        <span data-i18n={titleKey}>Desarrollador FullStack Semi-Senior</span> · <span class="company">{company}</span>
                     </h3>
-                    <p class="description">{description}</p>
+                    <p class="description" data-i18n={descriptionKey} style="text-align: justify;">
+                        Responsable del mantenimiento y evolución...
+                    </p>
                 </article>
             ))
         }

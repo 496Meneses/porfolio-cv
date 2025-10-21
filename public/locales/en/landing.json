@@ -1,0 +1,11 @@
+{
+  "landing": {
+    "greeting": "Hi, I'm",
+    "intro": "Master's student in Software Architecture, Full Stack Developer with more than",
+    "experience": "4 years of experience",
+    "location": "Popayán, Colombia",
+    "quote": "If you can dream it, you can build it.",
+    "quoteAuthor": "— Phineas Flynn",
+    "underConstruction": "This portfolio is under construction"
+  }
+}

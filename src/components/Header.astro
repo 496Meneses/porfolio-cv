@@ -18,28 +18,32 @@
         <ul class="nav-links">
             <li>
                 <a href="#home" class="nav-link">
-                    <span class="primary">#</span>inicio
+                    <span class="primary">#</span><span data-i18n="nav.home">inicio</span>
                 </a>
             </li>
             <li>
                 <a href="#experiencia" class="nav-link">
-                    <span class="primary">#</span>experiencia
+                    <span class="primary">#</span><span data-i18n="nav.experience">experiencia</span>
                 </a>
             </li>
             <li>
                 <a href="#educacion" class="nav-link">
-                    <span class="primary">#</span>educación
+                    <span class="primary">#</span><span data-i18n="nav.education">educación</span>
                 </a>
             </li>
             <li>
                 <a href="#habilidades" class="nav-link">
-                    <span class="primary">#</span>habilidades
+                    <span class="primary">#</span><span data-i18n="nav.skills">habilidades</span>
                 </a>
             </li>
             <li>
                 <a href="#sobre-mi" class="nav-link">
-                    <span class="primary">#</span>sobre-mi
+                    <span class="primary">#</span><span data-i18n="nav.about">sobre-mi</span>
                 </a>
+            </li>
+            <li class="language-switcher">
+                <button data-lang-switch="es" class="lang-btn active" aria-label="Español">ES</button>
+                <button data-lang-switch="en" class="lang-btn" aria-label="English">EN</button>
             </li>
         </ul>
     </nav>
@@ -98,6 +102,35 @@
         color: #3182ce;
     }
 
+    .language-switcher {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .lang-btn {
+        background: transparent;
+        border: 1px solid #3182ce;
+        color: #ffffff;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        opacity: 0.7;
+    }
+
+    .lang-btn:hover {
+        opacity: 1;
+        background: rgba(49, 130, 206, 0.2);
+    }
+
+    .lang-btn.active {
+        background: #3182ce;
+        opacity: 1;
+    }
+
     @media (max-width: 768px) {
         .mobile-menu-button {
             display: block;
@@ -130,7 +163,6 @@
 </style>
 
 <script>
-
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const navLinks = document.querySelector('.nav-links');
 
@@ -153,5 +185,3 @@
         });
     }
 </script>
-
-</style>

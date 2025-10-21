@@ -1,21 +1,21 @@
 ---
 interface Education {
-    title: string
-    description: string
+    titleKey: string
+    descriptionKey: string
     date: string
     institution: string
 }
 
 const EDUCATION: Education[] = [
     {
-        title: "Magister en Arquitectura de softwware",
-        description: "Maestría en Ingeniería de Software, enfocada en el desarrollo de soluciones innovadoras y escalables.",
+        titleKey: "education.degrees.masters",
+        descriptionKey: "education.descriptions.masters",
         date: "2025 - Presente",
         institution: "Universidad de la Sabana"
     },
     {
-        title: "Ingeniero de Sistemas",
-        description: "Diseño, desarrollo e integración de sistemas.",
+        titleKey: "education.degrees.engineer",
+        descriptionKey: "education.descriptions.engineer",
         date: "2016 - 2024",
         institution: "Universidad del Cauca"
     },
@@ -23,15 +23,15 @@ const EDUCATION: Education[] = [
 ---
 
 <section id="educacion" class="section bg-variant">
-    <span class="section-title-principal"><span class="primary">#</span>educación</span>
+    <span class="section-title-principal"><span class="primary">#</span><span data-i18n="education.title">educación</span></span>
 
     <div class="gallery">
         {
-            EDUCATION.map(({ title, description, date, institution }) => (
+            EDUCATION.map(({ titleKey, descriptionKey, date, institution }) => (
                 <div class="education-card">
-                    <h4 class="text-xl font-semibold">{title}</h4>
+                    <h4 class="text-xl font-semibold" data-i18n={titleKey}>Magister</h4>
                     <p class="text-gray-400">{institution}</p>
-                    <p class="text-sm">{description}</p>
+                    <p class="text-sm" data-i18n={descriptionKey}>Descripción</p>
                     <p class="text-sm text-gray-500">{date}</p>
                 </div>
             ))
@@ -75,4 +75,4 @@ const EDUCATION: Education[] = [
             padding: 2.5rem 2.5rem;
         }
     }
-</style></header></section>
+</style>

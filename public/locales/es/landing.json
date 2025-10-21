@@ -1,0 +1,11 @@
+{
+  "landing": {
+    "greeting": "Hola, soy",
+    "intro": "Estudiante de Maestría en arquitectura de software, Desarrollador Full Stack con más de",
+    "experience": "4 años de experiencia",
+    "location": "Popayán, Colombia",
+    "quote": "Si puedes imaginarlo, puedes construirlo.",
+    "quoteAuthor": "— Phineas Flynn",
+    "underConstruction": "Este portafolio está en construcción"
+  }
+}

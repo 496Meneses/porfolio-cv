@@ -1,0 +1,30 @@
+{
+  "experience": {
+    "title": "experience",
+    "current": "Currently...",
+    "date1": "Dec 2023 - Currently...",
+    "date2": "Oct 2021 – Dec 2023",
+    "date3": "Jan 2023 – Dec 2023",
+    "positions": {
+      "fullstack": "Fullstack Developer",
+      "fullstack_semi": "Semi-Senior Fullstack Developer",
+      "backend": "Backend Developer"
+    },
+    "months": {
+      "jan": "Jan",
+      "dec": "Dec",
+      "oct": "Oct"
+    }
+  },
+  "experiences": {
+    "intempo": {
+      "description": "Responsible for maintaining and evolving a microservices and microfrontends-based solution, developed with Angular v15+ and Spring Boot. Service communication via Apache Kafka. Report generation with JasperReports. Work under Scrum agile methodology and unit testing using JUnit and Mockito."
+    },
+    "sitis": {
+      "description": "Participation in the maintenance of a monolithic application developed in Java EE, using JSF and PrimeFaces. Support in the design and implementation of a new system based on microservices with Spring Boot, Spring Cloud and Angular, using PrimeNG. Development of new features and attention to specific client requirements under Scrum agile methodology. Integration of authentication with Keycloak and OAuth2, and report generation using JasperStudio."
+    },
+    "ucauca": {
+      "description": "Participation in the development of a web application to support institutional self-assessment processes. Responsible for collecting and analyzing functional and non-functional requirements, documented in user stories. Interface prototype design (Figma), frontend and backend implementation (Angular and Spring Boot), PDF report generation (JasperReports), automated testing (JUnit and Mockito) and system deployment in the cloud (AWS with Docker)."
+    }
+  }
+}

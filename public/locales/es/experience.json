@@ -1,0 +1,30 @@
+{
+  "experience": {
+    "title": "experiencia",
+    "current": "Actualmente...",
+    "date1": "Dic 2023 - Actualmente...",
+    "date2": "Oct 2021 – Dic 2023",
+    "date3": "Ene 2023 – Dic 2023",
+    "positions": {
+      "fullstack": "Desarrollador FullStack",
+      "fullstack_semi": "Desarrollador FullStack Semi-Senior",
+      "backend": "Desarrollador Backend"
+    },
+    "months": {
+      "jan": "Ene",
+      "dec": "Dic",
+      "oct": "Oct"
+    }
+  },
+  "experiences": {
+    "intempo": {
+      "description": "Responsable del mantenimiento y evolución de una solución basada en microservicios y microfrontends, desarrollada con Angular v15+ y Spring Boot. Comunicación entre servicios mediante Apache Kafka. Generación de reportes con JasperReports. Trabajo bajo metodología ágil Scrum y realización de pruebas unitarias utilizando JUnit y Mockito."
+    },
+    "sitis": {
+      "description": "Participación en el mantenimiento de una aplicación monolítica desarrollada en Java EE, utilizando JSF y PrimeFaces. Apoyo en el diseño e implementación de un nuevo sistema basado en microservicios con Spring Boot, Spring Cloud y Angular, utilizando PrimeNG. Desarrollo de nuevas funcionalidades y atención a requerimientos específicos del cliente bajo metodología ágil Scrum. Integración de autenticación con Keycloak y OAuth2, y generación de reportes mediante JasperStudio."
+    },
+    "ucauca": {
+      "description": "Participación en el desarrollo de una aplicación web para apoyar procesos de autoevaluación institucional. Responsable de la recolección y análisis de requerimientos funcionales y no funcionales, documentados en historias de usuario. Diseño de prototipos de interfaz (Figma), implementación del frontend y backend (Angular y Spring Boot), generación de reportes PDF (JasperReports), pruebas automatizadas (JUnit y Mockito) y despliegue del sistema en la nube (AWS con Docker)."
+    }
+  }
+}
