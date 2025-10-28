@@ -1,12 +1,16 @@
 {
   "abilities": {
-    "title": "skills",
+    "title": "Skills & Abilities",
+    "subtitle": "Here are some of the technologies and tools I work with",
     "categories": {
-      "languages": "Languages",
+      "languages": "Programming Languages",
+      "frameworks": "Frameworks & Libraries",
       "databases": "Databases",
-      "tools": "Tools",
-      "frameworks": "Frameworks",
-      "others": "Others"
+      "devops": "DevOps & Containers",
+      "tools": "Tools & Services",
+      "testing": "Testing & Messaging",
+      "web": "Web & Styling",
+      "cloud": "Cloud & AWS"
     }
   }
 }

@@ -1,12 +1,16 @@
 {
   "abilities": {
-    "title": "habilidades",
+    "title": "Habilidades y Competencias",
+    "subtitle": "Estas son algunas de las tecnologías y herramientas con las que trabajo",
     "categories": {
-      "languages": "Lenguajes",
-      "databases": "Bases de datos",
-      "tools": "Herramientas",
-      "frameworks": "Frameworks",
-      "others": "Otros"
+      "languages": "Lenguajes de Programación",
+      "frameworks": "Frameworks y Librerías",
+      "databases": "Bases de Datos",
+      "devops": "DevOps y Contenedores",
+      "tools": "Herramientas y Servicios",
+      "testing": "Testing y Mensajería",
+      "web": "Web y Estilos",
+      "cloud": "Cloud y AWS"
     }
   }
 }
