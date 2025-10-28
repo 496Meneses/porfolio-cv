@@ -6,8 +6,10 @@
       "languages": "Programming Languages",
       "frameworks": "Frameworks & Libraries",
       "databases": "Databases",
-      "bigdata": "Big Data & Analytics",
-      "bigdata.subtitle": "🎓 Currently Learning",
+      "bigdata": {
+        "title": "Big Data & Analytics",
+        "subtitle": "🎓 Currently Learning"
+      },
       "devops": "DevOps & Containers",
       "tools": "Tools & Services",
       "testing": "Testing & Messaging",
